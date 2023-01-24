@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
+import Experience from "./components/Experience";
 
 function App() {
   const [navMobile, setNavMobile] = useState(false);
@@ -13,6 +14,7 @@ function App() {
     >
       <Header setNavMobile={setNavMobile} />
       <Banner />
+
       {/* Mobile Nav */}
       <div
         className={`${
@@ -21,6 +23,7 @@ function App() {
       >
         <NavMobile setNavMobile={setNavMobile} />
       </div>
+      <Experience />
     </div>
   );
 }
