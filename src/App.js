@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Experience from "./components/Experience";
 import Video from "./components/Video";
+import Headsets from "./components/Headsets";
 
 function App() {
   const [navMobile, setNavMobile] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       </div>
       <Experience />
       <Video />
+      <Headsets />
     </div>
   );
 }
